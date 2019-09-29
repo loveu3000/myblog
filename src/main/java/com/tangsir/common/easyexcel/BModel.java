@@ -14,5 +14,6 @@ public class BModel extends BaseRowModel {
     public BModel(String className, String teacher) {
         this.className = className;
         this.teacher = teacher;
+
     }
 }
