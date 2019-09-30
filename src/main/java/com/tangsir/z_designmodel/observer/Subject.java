@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 报社类，被观察类
  */
-public class Subject {
+public class Subject implements Cloneable{
     /**
      * 所有读者类
      */
@@ -34,5 +34,18 @@ public class Subject {
         readers.forEach(reader -> {
             reader.updateStatus(this);
         });
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public void setReaders(List<ReaderApi> readers) {
+        this.readers = readers;
+    }
+
+    public List<ReaderApi> getReaders() {
+        return readers;
     }
 }
