@@ -2,7 +2,7 @@ package com.tangsir.z_designmodel.observer;
 
 public class App {
     public static void main(String[] args) throws CloneNotSupportedException {
-  
+
         /**
          * Subject 是一个父类 ，有一个公共属性，多个子类，
          * 要实现先初始化父类，设置公共属性，再用父类主动初

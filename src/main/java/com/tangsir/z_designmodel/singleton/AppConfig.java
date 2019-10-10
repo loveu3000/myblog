@@ -1,7 +1,6 @@
 package com.tangsir.z_designmodel.singleton;
 
 import lombok.Getter;
-import org.springframework.context.annotation.PropertySource;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +14,7 @@ public class AppConfig {
     public AppConfig(String fileName){
         this.readConfig(fileName);
     }
+
 
     public void readConfig(String fileName){
         Properties pro = new Properties();
